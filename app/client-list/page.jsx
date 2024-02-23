@@ -36,7 +36,7 @@ export default function ClientList() {
 
             <div className={"text-center flex flex-col gap-5  w-full items-center pt-10 pb-10"}>
 
-                {clients.map((client, index) => (
+                {clients && clients.map((client, index) => (
                     <div key={index}>
                         <div className={"text-start pl-5 py-2 rounded-2xl bg-secondary-50"}>
                             <div className={"w-96"}>
