@@ -7,7 +7,7 @@ import {Button} from "@nextui-org/react";
 
 const getClients = async () => {
     try {
-        const res = await fetch("http://localhost:3000/api/clients", {
+        const res = await fetch("https://loan-management-ten.vercel.app/api/clients", {
             cache: "no-store"
         });
         if (!res.ok) {
