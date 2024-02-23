@@ -27,7 +27,7 @@ export default function AddClient() {
         setClient({name: "", mobile: "", address: "", serialNo: ""});
 
         try {
-            const res = await fetch("https://loan-management-d5sxwetts-shornos-projects.vercel.app/api/clients", {
+            const res = await fetch("api/clients", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json"

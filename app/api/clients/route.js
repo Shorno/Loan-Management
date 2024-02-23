@@ -2,6 +2,8 @@ import connectMongoDB from "/libs/mongodb";
 import {NextResponse} from "next/server";
 import Client from "/models/client";
 
+
+
 export async function POST(request) {
     try {
         const {name, mobile, address, serialNo} = await request.json();
@@ -14,6 +16,7 @@ export async function POST(request) {
         return NextResponse.json({message: "An error occurred"}, {status: 500});
     }
 }
+
 
 export async function GET() {
     await connectMongoDB();
