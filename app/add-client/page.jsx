@@ -41,7 +41,7 @@ export default function AddClient() {
             });
             if (res.ok) {
                 toast.success("New client created successfully ")
-               //router.push("/")
+                //router.push("/")
             } else {
                 throw new Error("Failed to create new Client")
             }
